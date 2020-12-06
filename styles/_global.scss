@@ -1,0 +1,15 @@
+@import 'variables';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    border-top: $text-blue-bg-color 5px solid;
+    border-bottom: $text-blue-bg-color 5px solid;
+}
+main{
+    font-family: 'Montserrat', sans-serif;
+    color: $text-blue-bg-color;
+}

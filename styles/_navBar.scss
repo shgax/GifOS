@@ -1,0 +1,121 @@
+@import 'variables';
+
+/* Hamburger Menu */
+header{
+    font-size: 13px;
+    line-height: 16px;
+    color: $text-blue-bg-color;
+    padding: 30px 30px 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;    
+}
+
+.navbarLogoDesktop{
+    display: none;
+    @media screen and (min-width: 1220px){
+        .navbarLogoMobile{
+            display: none;
+        }
+        .navbarLogoDesktop{
+            display: block;
+        }
+    }
+}
+
+.btnNewGifo{
+    display: none;
+    @media screen and (min-width: 1220px){
+        display: block;
+        cursor: pointer;
+    }
+}
+
+.menu{
+    margin-top: 10px;
+    float: right;
+    ul{
+        width: 100%;
+        top: 100px;
+        left: 5px;
+        opacity: 80%;
+        height: 0;
+        position: absolute;
+        overflow: hidden;
+        list-style: none;
+        background: $text-blue-bg-color;
+        @media screen and (min-width: 1220px){
+            top: 0;
+            margin-top: 30px;
+            padding: 0px 40px 0 30px;
+            overflow: hidden;
+            background: unset;
+            height: unset;
+            display: flex;
+            flex-flow: row;
+            justify-content: flex-end;
+        }
+    }
+    li{
+        padding: 0 20px;
+        margin-top: 30px;
+        font-size: 15px;
+        line-height: 60px;
+        position: relative;
+        text-align: center;
+        color: $text-blue-bg-color;
+        @media screen and (min-width: 1220px){
+            text-transform: uppercase;
+            margin: 0;
+        }
+    }
+}
+
+.select {
+    color: gray;
+}
+
+.burgerMenu { 
+    display: block;
+        &:first-child {
+        transform-origin: 0% 0%;
+            }
+        &:nth-last-child(2) {
+        transform-origin: 0% 100%;
+            }
+    @media screen and (min-width: 1220px){
+        display: none;
+    }
+}
+
+.menuItem {
+    line-height: 28px;
+    font-size: 16px;
+    text-decoration: underline;
+    text-underline-offset: 20px;
+    color: $light-color;
+    @media screen and (min-width: 1220px){
+        color: $text-blue-bg-color;
+        text-decoration: none;
+        font-weight: bold;
+        &:hover{
+            cursor: pointer;
+            border-bottom: 2px solid $green-color;
+        }
+    }
+}
+
+.btnCheckBoxMenu {
+    width: 40px;
+    height: 32px;
+    opacity: 0;
+    z-index: 2;
+    display: block;
+    position: absolute;
+    &:hover{
+        cursor: pointer;
+    }
+    &:checked ~ ul{
+        height: 100%;
+        transition: height 0.5s ease-in-out;
+    }
+}

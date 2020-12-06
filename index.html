@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GifOs</title>
+    <!-- Style -->
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- Font -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <!-- Logo -->
+            <a href="#"><img class="navbarLogoDesktop" src="./assets/logo-desktop.svg" alt="gifOs Logo"></a>
+            <a href="#"><img class="navbarLogoMobile" src="./assets/logo-mobile.svg" alt="gifOs Logo"></a>
+            <nav class="menu">
+                <input class="btnCheckBoxMenu" type="checkbox" id="checkboxMenu" />
+                <img src="./assets/burger.svg" alt="burger" class="burgerMenu">   
+                    
+            <ul>
+                <li><a href="#" class="menuItem darkModeMenu">Modo Nocturno</a></li>
+                <li><a href="./favorites.html"class="menuItem">Favoritos</a></li>
+                <li><a href="./myGifos.html" class="menuItem">Mis GIFOS</a></li>
+                <a href="./newGifo.html"><img id="newGifo" class="btnNewGifo" src="./assets/button-crear-gifo.svg" alt="new gifOs"></a>
+            </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <section id="main">
+            <h1 class="textTittle" >Inspírate, busca, guarda y crea los mejores <span>GIFOS</span></h1>
+            <div class="mainImage">
+                <img src="./assets/ilustra_header.svg" alt="mainImage">
+            </div>
+            <div id="inputSearch">
+                <input type="search" id="search" placeholder="Buscar GIFOS y más">
+            </div>
+
+            <section id="sectionGifos" class="gridFluid">
+                <template>
+                    <div>
+                        
+                    </div>
+                </template>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <ul>
+            <li><p class="shareSocialNet">Compartir en:</p></li>
+            <li><a href="https://wwww.facebook.com/gifos" target="_blank"><img src="./assets/icon_facebook.svg" alt="facebookIcon"></a></li>
+            <li><a href="https://wwww.twitter.com/@gifos" target="_blank"><img src="./assets/icon-twitter.svg" alt="twitterIcon"></a></li>
+            <li><a href="https://www.instagram.com/@gifos" target="_blank"><img src="./assets/icon_instagram.svg" alt="instagramIcon"></a></li>
+            <li><p class="copyRightText">©️GIFOS 2020 All Rights Reserved.</p></li>
+        </ul>
+
+
+    </footer>
+</body>
+</html>
