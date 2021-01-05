@@ -7,7 +7,11 @@ header{
     color: $text-blue-bg-color;
     padding: 30px 30px 0;
     font-family: 'Montserrat', sans-serif;
-    font-weight: bold;    
+    font-weight: bold; 
+    @media screen and (min-width:1220px){
+        margin-left: 100px;
+        margin-right: 100px;     
+    }
 }
 
 .navbarLogoDesktop{
@@ -27,6 +31,7 @@ header{
     @media screen and (min-width: 1220px){
         display: block;
         cursor: pointer;
+        
     }
 }
 

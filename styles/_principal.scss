@@ -1,0 +1,39 @@
+@import 'variables';
+
+#principal{
+    width: 100%;
+    margin-top: 50px;
+    padding: 0 100px;
+}
+
+h1{
+    font-size: 25px;
+    line-height: 33px;
+    padding: 0 40px 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: $text-blue-bg-color;
+    @media screen and (min-width: 1220px){
+        font-size: 35px;
+        line-height: 50px;
+        padding: 50px 300px;
+        text-align: center;
+        color: $text-blue-bg-color;
+    }
+    span{
+        color: $green-color;
+    }
+}
+.principalImage{
+    display: flex;
+    justify-content: center;
+    img{
+        width: 200px;
+        height: 100%;
+        @media screen and (min-width:1220px){
+            width: 399px;
+            height: 190px;
+        }
+    }
+}

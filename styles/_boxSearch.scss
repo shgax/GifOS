@@ -1,0 +1,46 @@
+@import 'variables';
+
+#sectionGifos{
+    width: 100%;
+}
+#searchGifos{
+    width: 100%;
+    height: 100%;
+}
+
+#sectionGifos{
+    justify-content: center;
+    display: flex;
+}
+
+#searchInputGifos{
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 450px;
+    cursor: pointer;
+}
+
+#search{
+    width: 500px;
+    height: 50px;
+    border: 1px solid $text-blue-bg-color;
+    border-radius: 27px;
+    padding: 0 10px;
+    cursor: text;
+    outline: none;
+    @media screen and (min-width: 1220px){
+        width: 550px;
+    }
+}
+
+.trendingText{
+    padding: 50px 40px;
+    p{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 25px;
+        color: $text-blue-bg-color;
+        text-align: center;
+    }
+}

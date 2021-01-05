@@ -16,11 +16,23 @@ footer{
         margin-bottom: 20px;
         color: black;
         text-align: center;
-        font-family: 'Roboto', sans-serif;
+        font-family: 'Roboto-Regular', sans-serif;
+     
     }
     ul{
         @media screen and(min-width: 1220px){
             display: flex;
+            width: 100%;
+            margin-left: 100px;
+            margin-right: 100px;
+            .copyRightText{
+                width: 100%;
+                margin-left: 500px;
+            }
+            .shareSocialNet{
+                width: 100%;
+                margin-right: 50px;
+            }
         }
         li{
             display: inline;
